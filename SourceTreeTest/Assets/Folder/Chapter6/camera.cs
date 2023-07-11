@@ -16,6 +16,6 @@ public class camera : MonoBehaviour
     {
         Vector3 catPos = cat.transform.position;
         transform.position = new Vector3(catPos.x,catPos.y,transform.position.z);
-
     }
+
 }
