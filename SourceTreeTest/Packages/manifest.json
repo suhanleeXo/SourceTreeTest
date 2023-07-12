@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.easyar.sense": "file:C:/Users/xo/Downloads/EasyARSenseUnityPlugin_4.6.2+3022.b15d4240 (1)/com.easyar.sense-4.6.2+3022.b15d4240.tgz",
     "com.unity.collab-proxy": "1.15.4",
     "com.unity.ide.rider": "2.0.7",
     "com.unity.ide.visualstudio": "2.0.12",
