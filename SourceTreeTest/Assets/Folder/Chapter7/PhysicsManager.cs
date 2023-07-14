@@ -13,6 +13,9 @@ public class PhysicsManager : MonoBehaviour
     }
     private void Update()
     {
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+        Vector3 Dir = new Vector3(h, 0, v);
         if(Input.GetKey(KeyCode.LeftArrow))
         {
             circle.transform.Translate(new Vector3(-1, 0, 0) * Time.deltaTime * speed);
