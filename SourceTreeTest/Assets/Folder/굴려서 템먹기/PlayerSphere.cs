@@ -19,34 +19,18 @@ public class PlayerSphere : MonoBehaviour
     {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
-        Vector3 dir = new Vector3(h, 0, v);
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            dir *= speed * Time.deltaTime;
-        }
-        else if(Input.GetKeyDown(KeyCode.DownArrow))
-        {
 
-        }
-        else if(Input.GetKeyDown(KeyCode.RightArrow))
-        {
+        Vector3 inputDir = new Vector3(h, 0, v);
 
-        }
-        else if(Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-
-        }
-        else if(Input.GetKeyDown(KeyCode.Space))
-        {
-
-        } 
+        transform.Translate(inputDir * speed * Time.deltaTime);
+        
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.collider.CompareTag("Ground"))
         {
-
+            Destroy(gameObject);
         }
     }
 }
